@@ -2,8 +2,6 @@ _This repo follows Rails-like structure, but only provides rough examples for co
 
 ### 1. Business Logic Questions
 
-To ensure the feature is built correctly, further clarification on the following business logic questions is needed:
-
 __1. What is the definition of "project"? What properties it might have and what operations it must support?__
 
 This is the fundamental question for the feature. Because we will introduce a new table in the database, it is important to understand how do we want "projects" to function, to properly design data-layer.
@@ -58,9 +56,9 @@ Notes:
 - in the given example `projects_contractors.rate` is an integer as it is usually easier to handle than floats, but in real life it would depend on the existing project setup and consistent approach must be followed,
 - same goes for `projects_contractors.currency`.
 
-### 2. Backend
+### 3. Backend
 
-##### 2.1 Models
+##### 3.1 Models
 
 Changes required:
 - update the `Contractor` model and create the `Project` model to establish associations,
@@ -69,7 +67,7 @@ Changes required:
 
 Examples can be found in the `models/` folder.
 
-##### 2.2 Controllers
+##### 3.2 Controllers
 
 Changes required:
 - create `ProjectsController` with CRUD actions,
@@ -78,25 +76,25 @@ Changes required:
 
 Examples can be found in the `controllers/` folder.
 
-##### 2.3 Update routes
+##### 3.3 Update routes
 
 - add CRUD routes for `ProjectsController`
 
-##### 2.4 Services to handle business logic
+##### 3.4 Services to handle business logic
 
 Create/update services to handle required business logic.
 
-##### 2.5 Tests
+##### 3.5 Tests
 
 - Add tests for the new models, controllers, and views.
 - Ensure validations and business logic are tested.
 
-##### 2.6 Documentation
+##### 3.6 Documentation
 
 - Update API documentation to include new endpoints and parameters.
 - Provide internal documentation for the new business logic and data relationships.
 
-### 3. Front-End Changes
+### 4. Front-End Changes
 
 On frontend side following changes are necessary:
 
@@ -131,7 +129,7 @@ On frontend side following changes are necessary:
 
 4. Update Equity view if required
 
-### 4. Design System Changes
+### 5. Design System Changes
 
 Design system changes might include updates to existing UI components or the creation of new components to support project rate management.
 
