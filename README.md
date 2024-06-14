@@ -98,7 +98,7 @@ Create/update services to handle required business logic.
 
 On frontend side following changes are necessary:
 
-1. Update `People` views:
+##### 4.1 Update `People` views:
 
   - Index view:
 
@@ -118,16 +118,17 @@ On frontend side following changes are necessary:
 
 ---
 
-2. Create new "Projects" views (and navigation item in the navigation section):
-
+##### 4.2 Create new "Projects" views and update navigation:
+  
+  - And navigation item in the navigation section.
   - Index View: List all projects with options to view, edit, and delete.
   - Create/Update View: Form for creating and updating projects.
 
 ---
 
-3. Update Analytics view if required
+##### 4.3 Update Analytics view if required
 
-4. Update Equity view if required
+##### 4.4 Update Equity view if required
 
 ### 5. Design System Changes
 
